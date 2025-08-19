@@ -14,18 +14,30 @@ This project automates test scenarios for the [ParaBank](https://parabank.paraso
 ## 📂 Project Structure
 
 ```
-parabank/
-├── src/
-│   ├── main/java/
-│   │   └── pages/         # Page classes (LoginPage, RegisterPage, etc.)
-│   ├── test/java/
-│   │   ├── stepdefs/      # Step definitions for feature steps
-│   │   ├── hooks/         # Cucumber Hooks (Before, After)
-│   │   └── runners/       # Cucumber Test Runner
-│   └── test/resources/
-│       └── features/      # .feature files for test scenarios
-├── pom.xml
-└── README.md
+ParaBank-Simple-Cucumber/
+├─ pom.xml
+└─ src
+   └─ test
+      ├─ java
+      │  ├─ factory
+      │  │   └─ DriverFactory.java
+      │  ├─ hooks
+      │  │   └─ Hooks.java
+      │  ├─ pages
+      │  │   ├─ LoginPage.java
+      │  │   ├─ AccountsOverviewPage.java
+      │  │   ├─ TransferFundsPage.java
+      │  │   ├─ BillPayPage.java
+      │  │   └─ AccountActivityPage.java
+      │  ├─ stepdefs
+      │  │   └─ ParaBankSteps.java
+      │  └─ runners
+      │      └─ TestRunner.java
+      ├─ resources
+      |   └─ parabank
+      |      └─ parabank.feature
+      ├─ pom.xml
+      └── README.md
 ```
 
 ---
